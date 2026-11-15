@@ -2,6 +2,15 @@
 
 A scientific investigation dashboard for the team's NASA Space Apps Challenge 2026 project, **Be An Earth System Trend Detective!** It explores temperature trend magnitude separately from statistical significance and retains source provenance. This is an exploratory tool, not a validated climate-change detection system.
 
+**[Open the public application](https://terravect-trendlens.streamlit.app/)** ·
+**[Public source repository](https://github.com/laithmunir9/terravect-trendlens)**
+
+Published on Streamlit Community Cloud with Python 3.12 and no configured secrets.
+Fresh unauthenticated browser checks passed for Giovanni data/charts/downloads,
+POWER comparison modes and exports, methods disclosure, and mobile layout (390×844).
+Desktop checks used 1440×1000. Downloaded originals and annual/comparison values
+matched the reviewed snapshots. [Deployment and verification details](docs/DEPLOYMENT.md).
+
 ## What TrendLens adds
 
 TrendLens turns NASA temperature records into guided, reproducible investigations:
@@ -209,7 +218,7 @@ Playwright runtime launched a separate temporary browser. Checks covered page id
 nonblank rendering, no framework exceptions or browser errors, example → investigation navigation,
 relative → absolute comparison values, methods navigation, brief download, and mobile overflow.
 Live POWER retrieval and the bundled original responses were checked separately. Authenticated
-Giovanni browser-export acquisition is now evidenced and tested separately; Python point retrieval remains unverified. See `docs/GIOVANNI_ACQUISITION.md` for the new validation record. The current full suite passes **168 tests**; the release scan checks **45 files** with no recognized credential-pattern matches.
+Giovanni browser-export acquisition is now evidenced and tested separately; Python point retrieval remains unverified. See `docs/GIOVANNI_ACQUISITION.md` for the new validation record. The completed release-candidate suite passed **168 tests**. The deployment pass subsequently ran **9 targeted release tests**, including the new Community Cloud entrypoint check; the final public-file review covered **47 files** with no recognized credential-pattern matches.
 
 ```bash
 pip install -r requirements-dev.txt
@@ -248,8 +257,8 @@ On 14 November 2026, live checks for Abu Dhabi (24.4539, 54.3773) and Oslo (59.9
 
 The current, specific blockers are maintained in [RELEASE_READINESS.md](docs/RELEASE_READINESS.md):
 Organizer eligibility acceptance, the required final demo/submission links,
-team attestations, and production smoke verification. Publication to GitHub and
-Streamlit Community Cloud is authorized; NASA Space Apps submission is not.
+and team attestations. GitHub and Streamlit Community Cloud publication and
+production smoke verification are complete; NASA Space Apps submission is not authorized.
 Autocorrelation-adjusted inference is deliberately not advertised; a calibrated
 significance claim would require additional validated scientific work.
 

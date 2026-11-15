@@ -4,6 +4,37 @@ The owner authorized publishing the reviewed release candidate to public GitHub
 and Streamlit Community Cloud on 15 November 2026. No NASA Space Apps submission
 is authorized or automated. The prior local release review remains a historical record.
 
+## Published URLs and verification
+
+- Public source: https://github.com/laithmunir9/terravect-trendlens
+- Public application: https://terravect-trendlens.streamlit.app/
+- Application release commit: `8d0447202169a158ba89c4f028e744e8e9bc78a3` (later documentation-only updates do not change app code).
+- The anonymous GitHub tree contained exactly the 47 reviewed files; all blob contents matched.
+  No credentials, local environments, browser artifacts or duplicate root downloads were published.
+- Community Cloud installed the public requirements on Linux with **Python 3.12.16**.
+  **No secrets were configured.** The root local-auth dependency file was not used.
+- Fresh unauthenticated Chromium sessions passed at **1440×1000** and **390×844**:
+  default Giovanni source, rendered chart, coverage/uncertainty text, original CSV,
+  annual CSV, provenance JSON and brief downloads; POWER comparison in relative and
+  absolute modes, Oslo detail, comparison CSV, methods/AI disclosure, and mobile navigation.
+- Downloaded original Giovanni bytes matched SHA-256
+  `f20402e193fd70f516e6843395d9b18c1f3320ed3f0337fe59d50d3d439e2320`.
+  All 24 exported annual means and all 25 POWER comparison rows matched local calculations.
+- Mobile document width equaled the 390 px viewport; charts were 358 px wide with no
+  horizontal overflow. No app exception overlays or uncaught JavaScript errors occurred.
+- Non-blocking platform requests returned 404 for `cdn.heapanalytics.com/js/heap-.js`
+  and the anonymous `/api/v2/user/details` lookup. The tested application flows passed.
+- Community Cloud replaced its initially resolved PyArrow 26.0.1 with 24.0.0 during
+  managed installation. This is platform behavior, not an application dependency change.
+- These checks cover the saved public investigations. Live NASA point retrieval remains
+  unverified; original scientific/provenance limitations are unchanged. Browser checks
+  used Chromium with mobile emulation, not every physical device or browser.
+
+The Browser plugin was unavailable, and the in-app browser failed to open. Validation
+used Playwright with fresh isolated contexts. Screenshots and downloaded QA artifacts
+remain local and are not part of the public source. An automatic-review usage limit
+interrupted one check; it was rerun successfully after the user requested continuation.
+
 ## Community Cloud settings
 
 - Repository: `laithmunir9/terravect-trendlens`.

@@ -1,7 +1,9 @@
 # TrendLens release-readiness review
 
 Review date: **15 November 2026 (Asia/Dubai)**. This is a release candidate, not a
-claim of submission eligibility. No service, repository, or project submission was published.
+claim of submission eligibility. The initial review did not publish anything. A later
+owner-authorized publication deployed GitHub and Streamlit Community Cloud; see
+[deployment results](DEPLOYMENT.md). No NASA Space Apps submission was made.
 
 ## Scientific decision
 
@@ -124,9 +126,10 @@ Do not publish an unchecked parent directory or a separate repository history.
    initial-idea provenance and complete AI-use declaration. These cannot be established
    from source files. The official guide ties the deadline to the registered event;
    do not infer the team's deadline solely from this workstation's timezone.
-4. **Production smoke check and approval:** Docker/Linux build is unverified because
-   the Docker daemon is unavailable. Follow `DEPLOYMENT.md` on the chosen host and
-   obtain explicit publication approval. No account or hosting changes were made.
+4. **Publication and production smoke check: completed.** The owner approved public
+   GitHub and Streamlit Community Cloud publication. The app built on Community Cloud
+   Linux/Python 3.12 and passed fresh-session desktop/mobile checks; see `DEPLOYMENT.md`.
+   The optional Docker image remains untested and was not used for this deployment.
 
 Autocorrelation-adjusted significance remains an explicitly unavailable capability,
 not a hidden claim. It is not required to run the public exploratory demo; it would

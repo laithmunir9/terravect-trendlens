@@ -111,7 +111,8 @@ the user's original downloads. **TrendLens's Python point API remains unverified
 the user reported HTTP 500 for both long and one-year requests. This browser workflow
 uses the separate Giovanni area-averaging service. No claim that the point API was
 fixed or successfully re-run is made. No credentials, cookies, private request
-headers or browser profiles are included in the public snapshot. Nothing is deployed.
+headers or browser profiles are included in the public snapshot. Publication occurred
+later under explicit owner approval; see `DEPLOYMENT.md` for the hosted verification.
 
 
 Validation on 15 November 2026: **168 tests passed**; release allowlist scan checked
