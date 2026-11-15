@@ -24,6 +24,11 @@ Future inference work needs a specified estimand, calendar-aware handling, lag/b
 sensitivity, and coverage validation for short autocorrelated series. We do not use
 a nonsignificant autocorrelation diagnostic as proof of independent errors.
 
+A subsequent [fixed 2002–2025 Giovanni HAC feasibility audit](GIOVANNI_INFERENCE_AUDIT.md)
+checked calendar spacing, lag sensitivity and simulated small-sample calibration.
+The candidate over-rejected zero trends, so the current qualification remains in
+place. No new significance method is enabled in the app.
+
 The app provides exploratory estimates, not causal attribution, forecasts, calibrated
 climate-change detection, or a formal comparison of slopes. Dataset/model uncertainty
 remains outside the OLS interval. No claim of full challenge-science completion is made.

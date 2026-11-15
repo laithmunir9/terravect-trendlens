@@ -30,6 +30,7 @@ FILES = [
     'data/demos/giovanni_abu_dhabi_2020.csv', 'docs/GIOVANNI_ACQUISITION.md',
     'scripts/check_release.py', 'scripts/earthdata_login.py',
     'scripts/verify_live_power.py', 'scripts/verify_live_giovanni.py',
+    'scripts/audit_giovanni_hac.py', 'docs/GIOVANNI_INFERENCE_AUDIT.md',
 ]
 PATTERNS = {
     'private-key': r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
