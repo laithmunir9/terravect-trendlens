@@ -1,0 +1,86 @@
+{
+  "review_date_asia_dubai": "2026-11-15",
+  "recorded_at_utc": "2026-11-15T09:16:47.876700+00:00",
+  "retrieval_method": "curl HTTPS with certificate validation enabled; HTML and embedded page content inspected",
+  "official_pages": [
+    {
+      "url": "https://www.spaceappschallenge.org/2026/challenges/earth-system-trend-detective/?tab=resources",
+      "response_sha256": "994076e7f1e7937ed648be9753ee93fb7cbfa39f5727bfabdeb2c552a1c9231b"
+    },
+    {
+      "url": "https://www.spaceappschallenge.org/resources/project-submission-guide/",
+      "response_sha256": "aebdc561ce847c73dd48e3d2716ad03cb404905e581d97dea3ec304db45b4285"
+    },
+    {
+      "url": "https://www.spaceappschallenge.org/resources/participant-faqs/",
+      "response_sha256": "0628507802daeb25a4f028f5e1fee4ccb4f94edddef0f1628f9a3f604eebfce2"
+    },
+    {
+      "url": "https://www.spaceappschallenge.org/legal/",
+      "response_sha256": "f3977ecd0c62d537e6b87e953fc324974f90e5d6c8cce14cf3cddb5a0ae891d8"
+    }
+  ],
+  "challenge_resource_links": [
+    {
+      "url": "https://giovanni.gsfc.nasa.gov/",
+      "name": "Giovanni"
+    },
+    {
+      "url": "https://disc.gsfc.nasa.gov/information/tools?title=Hydrology%20Time%20Series",
+      "name": "Hydrology Time Series"
+    },
+    {
+      "url": "https://appeears.earthdatacloud.nasa.gov/",
+      "name": "AppEEARS"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/cdo-web/",
+      "name": "Climate Data Online (CDO)"
+    },
+    {
+      "url": "https://ntrs.nasa.gov/api/citations/20090042747/downloads/20090042747.pdf",
+      "name": "Time-Series Analysis of Remotely-Sensed SeaWiFS Chlorophyll in River-Influenced Coastal Regions"
+    },
+    {
+      "url": "https://climexp.knmi.nl/",
+      "name": "Royal Netherlands Meteorological Institute (KNMI) Climate Explorer"
+    },
+    {
+      "url": "https://medium.com/@snp.kriss/statistical-test-methods-to-detect-trends-in-time-series-data-b361a0ec530b",
+      "name": "Statistical test methods to detect trends in time series data"
+    },
+    {
+      "url": "https://www.statsig.com/perspectives/a-comprehensive-guide-to-statistical-significance",
+      "name": "A Comprehensive Guide to Statistical Significance"
+    },
+    {
+      "url": "https://donnees-data.asc-csa.gc.ca/en/dataset/rcm",
+      "name": "Radarsat Constellation Mission (RCM) - Data"
+    },
+    {
+      "url": "http://geo.ca/",
+      "name": "Geo.ca"
+    },
+    {
+      "url": "https://www.asc-csa.gc.ca/eng/satellites/swot/",
+      "name": "SWOT Mission - Information"
+    },
+    {
+      "url": "https://www.asc-csa.gc.ca/eng/satellites/everyday-lives/monitoring-and-protecting-our-ecosystems-from-space.asp",
+      "name": "Monitoring and protecting our ecosystem from space"
+    },
+    {
+      "url": "https://github.com/asc-csa/Synthetic_Aperture_Radar_Tutorial",
+      "name": "Synthetic Aperture Radar python Tutorial"
+    }
+  ],
+  "power_listed_in_resources": false,
+  "eligibility_status": "Listed-resource use evidenced: actual Giovanni browser exports now analyzed in the Abu Dhabi investigation. POWER is separate; overall organizer acceptance is not certified.",
+  "organizer_clarification": "https://github.com/nasa/spaceapps/discussions/1849",
+  "power_terms": "https://registry.opendata.aws/nasa-power/",
+  "power_referencing": "https://power.larc.nasa.gov/docs/referencing/",
+  "giovanni_acquisition_evidence": "docs/GIOVANNI_ACQUISITION.md",
+  "giovanni_snapshot_manifest": "data/demos/giovanni_manifest.json",
+  "giovanni_point_api_verified": false,
+  "giovanni_provenance_limit": "Browser x/y export, observed manual workflow and documented timezone reconstruction; no native job response or job URL retained."
+}

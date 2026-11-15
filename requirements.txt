@@ -1,0 +1,7 @@
+streamlit>=1.67,<2
+pandas>=2.0,<3
+numpy>=1.26,<3
+scipy>=1.11,<2
+plotly>=5.20,<7
+requests>=2.31,<3
+earthaccess>=0.19,<0.20

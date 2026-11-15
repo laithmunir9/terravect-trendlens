@@ -1,0 +1,119 @@
+{
+  "title": "NASA POWER T2M snapshots \u2014 2001\u20132025",
+  "selected_years": [
+    2001,
+    2025
+  ],
+  "records": {
+    "Abu Dhabi, UAE": {
+      "file": "abu_dhabi_source.json",
+      "provenance": {
+        "source": "NASA POWER",
+        "parameter": "T2M",
+        "source_units": "C",
+        "analysis_units": "C",
+        "selected_years": [
+          2001,
+          2025
+        ],
+        "header": {
+          "title": "NASA/POWER Source Native Resolution Monthly and Annual",
+          "api": {
+            "version": "v2.10.0",
+            "name": "POWER Monthly and Annual API"
+          },
+          "sources": [
+            "MERRA2"
+          ],
+          "fill_value": -999.0,
+          "time_standard": "LST",
+          "start": "20010101",
+          "end": "20251231"
+        },
+        "parameter_metadata": {
+          "units": "C",
+          "longname": "Temperature at 2 Meters"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            54.377,
+            24.454,
+            8.25
+          ]
+        },
+        "api_messages": [],
+        "ignored_annual_summaries": 25,
+        "missing_months": 0,
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=RE&latitude=24.4539&longitude=54.3773&start=2001&end=2025&format=JSON",
+        "request_parameters": {
+          "parameters": "T2M",
+          "community": "RE",
+          "latitude": 24.4539,
+          "longitude": 54.3773,
+          "start": 2001,
+          "end": 2025,
+          "format": "JSON"
+        },
+        "retrieved_at_utc": "2026-11-14T17:58:42.831622+00:00",
+        "response_sha256": "c351acfbe44037904a0722e1bc4d8c7b1814a8b1a3d7078b62531a1297e5b811"
+      },
+      "raw_monthly_weighting_verified": true
+    },
+    "Oslo, Norway": {
+      "file": "oslo_source.json",
+      "provenance": {
+        "source": "NASA POWER",
+        "parameter": "T2M",
+        "source_units": "C",
+        "analysis_units": "C",
+        "selected_years": [
+          2001,
+          2025
+        ],
+        "header": {
+          "title": "NASA/POWER Source Native Resolution Monthly and Annual",
+          "api": {
+            "version": "v2.10.0",
+            "name": "POWER Monthly and Annual API"
+          },
+          "sources": [
+            "MERRA2"
+          ],
+          "fill_value": -999.0,
+          "time_standard": "LST",
+          "start": "20010101",
+          "end": "20251231"
+        },
+        "parameter_metadata": {
+          "units": "C",
+          "longname": "Temperature at 2 Meters"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            10.752,
+            59.914,
+            258.74
+          ]
+        },
+        "api_messages": [],
+        "ignored_annual_summaries": 25,
+        "missing_months": 0,
+        "request_url": "https://power.larc.nasa.gov/api/temporal/monthly/point?parameters=T2M&community=RE&latitude=59.9139&longitude=10.7522&start=2001&end=2025&format=JSON",
+        "request_parameters": {
+          "parameters": "T2M",
+          "community": "RE",
+          "latitude": 59.9139,
+          "longitude": 10.7522,
+          "start": 2001,
+          "end": 2025,
+          "format": "JSON"
+        },
+        "retrieved_at_utc": "2026-11-14T17:58:43.858076+00:00",
+        "response_sha256": "733b47ce3b81478360bcf0e262b26a1951e37261b7ffda57c38f9ba135d4d8b8"
+      },
+      "raw_monthly_weighting_verified": true
+    }
+  }
+}

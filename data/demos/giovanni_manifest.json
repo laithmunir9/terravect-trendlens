@@ -1,0 +1,111 @@
+{
+  "source": "NASA Giovanni browser export",
+  "service": "Giovanni in the Cloud area-averaged time series",
+  "source_url": "https://giovanni.earthdata.nasa.gov/",
+  "product": "M2IMNXASM",
+  "version": "5.12.4",
+  "variable": "M2IMNXASM_5_12_4_T2M",
+  "parameter": "T2M",
+  "doi": "10.5067/5ESKGQTZG7FO",
+  "source_units": "K",
+  "analysis_units": "C",
+  "requested_bbox_west_south_east_north": [
+    54.25,
+    24.25,
+    54.5,
+    24.75
+  ],
+  "native_resolution_degrees_lat_lon": [
+    0.5,
+    0.625
+  ],
+  "spatial_processing": "NASA area-averaging service over the requested bounding box; not the POWER point extraction or a city-wide measurement. Returned contributing grid-cell coordinates/count are not present in the chart CSV.",
+  "retrieved_on": "2026-11-15",
+  "retrieval_date_precision": "Date only; exact server response time not retained.",
+  "acquisition_timezone": "Asia/Dubai",
+  "acquisition_method": "User signed in to the official Giovanni website, generated monthly T2M time series, and downloaded the plot CSV for each requested range. User supplied both files directly to this workspace.",
+  "verification_basis": {
+    "product_units_region": "Observed in user-provided successful Giovanni screenshot for 2020; product/version, monthly, K, requested bounding box and date range visible.",
+    "long_record": "Original generated filename identifies the same product and bounds, 2001-2025 request. User confirmed downloading both. All 11 overlapping values agree exactly.",
+    "limitations": "Chart exports contain x,y only, not native server metadata. Origin is supported by the observed manual workflow, not by a new authenticated programmatic request, cryptographic NASA signature or retained Harmony job URL."
+  },
+  "selected_years": [
+    2001,
+    2025
+  ],
+  "timestamp_processing": {
+    "method": "Restore the browser-local calendar labels by converting exported UTC timestamps to Asia/Dubai, then normalize the first-of-month labels. This rule is specific to these checksum-verified browser exports, not a general Giovanni API rule.",
+    "browser_behavior": "The deployed frontend parses service timestamps with new Date(t), serializes toISOString(), filters by requested bounds, and downloads the plotted x,y values. NASA averaging-service reference CSV uses timezone-less timestamps. In UTC+04:00 a first-of-month midnight becomes 20:00 UTC on the previous date.",
+    "example": {
+      "exported": "2020-01-31T20:00:00.000Z",
+      "restored_calendar_month": "2020-02"
+    },
+    "missing_months_long": [
+      "2001-01"
+    ],
+    "complete_years": [
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "certainty_limit": "No native response was retained for these specific jobs. The restoration is based on the acquisition timezone, timestamp pattern, deployed frontend logic and NASA service format reference; it is not an independent re-download."
+  },
+  "frontend_evidence": {
+    "url": "https://giovanni.earthdata.nasa.gov/assets/index-qzNfl4bx.js",
+    "sha256": "99c9c1bebc1f8a784df3d497e925d3cd126fd363b0eff819234a5c3ec9689d18",
+    "reviewed_on": "2026-11-15",
+    "parser": "S8/wB: new Date(t) then toISOString()",
+    "exporter": "nD/kV and oD/AV: plotted x,y CSV with product/location/request dates in filename"
+  },
+  "service_csv_format_reference": {
+    "url": "https://raw.githubusercontent.com/nasa/harmony-regression-tests/main/test/giovanni-averaging-service/reference_data/8539508_GIOVANNI-areaAvgTimeSeries.GPM_3IMERGHH_07_precipitation.20210829-20210829.110W_25N_78W_35N.csv",
+    "sha256": "1027a7811fa2b4d15137e3d3de2ced2159788fe0e0a04164f5f43f117d8b841f",
+    "use": "Timestamp-format evidence only. No reference precipitation measurements are used by TrendLens."
+  },
+  "workflow_documentation": "https://github.com/nasa/gesdisc-tutorials/blob/main/notebooks/How_To_Access_the_Giovanni_Averaging_Service_Using_Python.ipynb",
+  "challenge_resource_url": "https://www.spaceappschallenge.org/2026/challenges/earth-system-trend-detective/?tab=resources",
+  "license_reference": "https://data.nasa.gov/dataset/merra-2-instm-2d-asm-nx-2dmonthly-meansingle-levelassimilationsingle-level-diagnostics-0-6-224d6",
+  "records": {
+    "long": {
+      "file": "giovanni_abu_dhabi_2001_2025.csv",
+      "original_filename": "M2IMNXASM_5_12_4_T2M_54.2500_24.2500_54.5000_24.7500_2001-01-01_to_2025-12-31.csv",
+      "sha256": "f20402e193fd70f516e6843395d9b18c1f3320ed3f0337fe59d50d3d439e2320",
+      "rows": 299,
+      "requested_dates": [
+        "2001-01-01",
+        "2025-12-31"
+      ]
+    },
+    "check": {
+      "file": "giovanni_abu_dhabi_2020.csv",
+      "original_filename": "M2IMNXASM_5_12_4_T2M_54.2500_24.2500_54.5000_24.7500_2020-01-01_to_2020-12-31.csv",
+      "sha256": "49c142126d9d25e32b555649894da2635e3d161cf58b8835213c0c01b0a21f25",
+      "rows": 11,
+      "requested_dates": [
+        "2020-01-01",
+        "2020-12-31"
+      ]
+    }
+  }
+}

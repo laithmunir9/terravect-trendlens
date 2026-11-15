@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.playwright-mcp/
+.env
+.env.*
+.netrc
+_netrc
+.urs_cookies
+.streamlit/secrets.toml
